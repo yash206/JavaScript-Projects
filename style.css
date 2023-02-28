@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+}
+b{
+    color: #ffffff;
+}
+button{
+    background-color: aquamarine;
+}
+button:hover{
+    background-color: red;
+}
+#p1{
+    color: aliceblue;
+}
