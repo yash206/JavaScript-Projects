@@ -1,15 +1,14 @@
-body{
-    background-color: black;
+.box1{
+    height: 97vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-b{
-    color: #ffffff;
-}
-button{
-    background-color: aquamarine;
-}
-button:hover{
-    background-color: red;
-}
-#p1{
-    color: aliceblue;
+
+.box2{
+    height: 97vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
