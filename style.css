@@ -12,3 +12,21 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.section1{
+    height:70px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.section2{
+    height:70px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    color: aliceblue;
+}
