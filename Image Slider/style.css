@@ -7,12 +7,78 @@
 .carousel-container{
     width: 60%;
     margin: auto;
-    border: 5px solid black;
     overflow: hidden;
+    position: relative;
+    margin-top: 57px;
 }
 
 .carousel-slide{
     display: flex;
     width: 100%;
     height: 500px;
+}
+
+#prevBtn{
+    background-color: azure;
+    position: absolute;
+    font-size: 70px;
+    z-index: 10;
+    top: 40%;
+    opacity: 0.4;
+    left: 2%;
+    cursor: pointer;
+}
+
+#nextBtn{
+    background-color: azure;
+    position: absolute;
+    font-size: 70px;
+    z-index: 10;
+    top: 40%;
+    opacity: 0.4;
+    right: 2%;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin: 10px;
+}
+
+.content{
+    width: 70%;
+    padding: 20px;
+}
+
+.content li{
+    padding: 20px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.ele1{
+    width: 300px;
+    border: 5px solid rgb(202, 202, 202);
+}
+
+.conc{
+    padding: 20px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(97, 92, 92);
+}
+
+.footer{
+    height: 100px;
+    background: black;
+    color: white;
+    font-stretch: expanded;
+    font-weight: bolder;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
 }

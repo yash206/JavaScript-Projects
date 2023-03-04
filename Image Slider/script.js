@@ -1,5 +1,6 @@
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImage = document.querySelectorAll('.carousel-slide img');
+const part1 = document.querySelector('.part1')
 
 const prev = document.querySelector('#prevBtn');
 const next = document.querySelector('#nextBtn');
@@ -12,13 +13,13 @@ carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 
 prev.addEventListener('click', ()=>{
     if(counter<=0) return;
-    carouselSlide.style.transition = 'transform 2.5s ease-in-out';
+    carouselSlide.style.transition = 'transform 1.5s ease-in-out';
     counter = counter-1;
     carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 });
 next.addEventListener('click', ()=>{
     if(counter>=carouselImage.length-1) return;
-    carouselSlide.style.transition = 'transform 2.5s ease-in-out';
+    carouselSlide.style.transition = 'transform 1.5s ease-in-out';
     counter = counter+1;
     carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 });
