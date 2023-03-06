@@ -344,7 +344,7 @@ nav{
     }
 
     .logo{
-        width: 40%;
+        width: 50%;
     }
     
     .nav-links{
@@ -439,5 +439,5 @@ nav{
 }
 
 .head-image-updated{
-    margin-top: 92vh;
+    margin-top: 89vh;
 }
