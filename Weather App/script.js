@@ -4,18 +4,18 @@ window.addEventListener("load", ()=>{
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-
-            const api = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&hourly=apparent_temperature`;
+            const APIkey = 'bca24326dba46542257a7fa51db12deb'
+            const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${APIkey}`;
             fetch(api)
-                .then(response =>{
-                    return response.json();
-                })
+                .then(response => response.json())
                 .then(data => {
-                    document.querySelector(".temperature-degree").innerHTML = Math.round(data.hourly.apparent_temperature[0]);
-                    document.querySelector(".temperature-unit").innerHTML = data.hourly_units.apparent_temperature;
-                    document.querySelector(".location-timezone").innerHTML = data.timezone;
+                    // document.querySelector(".temperature-degree").innerHTML = Math.round(data.data[0].app_temp);
+                    // document.querySelector(".temperature-unit").innerHTML = data.hourly_units.apparent_temperature;
+                    // document.querySelector(".timezone").innerHTML = 'Timezone: &nbsp; &nbsp;' + data.data[0].timezone;
+                    // document.querySelector(".loc").innerHTML = 'Location:&nbsp;&nbsp;' + data.data[0].city_name;
                     console.log(data)
                 })
+                
         })
     }else{
         document.querySelector(".location-timezone").innerHTML = 'Please allow location permission <br> for fetching your location!!!';
