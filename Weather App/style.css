@@ -10,8 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(rgb(35, 82, 184),rgb(22, 96, 255));
-    color: aliceblue;
+    background: linear-gradient(rgb(73, 195, 252),rgb(45, 151, 201));
     font-family: sans-serif;
 }
 
