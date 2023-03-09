@@ -1,3 +1,8 @@
+window.addEventListener('load', ()=>{
+    const preload = document.querySelector('.preload');
+    preload.classList.add('finish');
+})
+
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImage = document.querySelectorAll('.carousel-slide img');
 const part1 = document.querySelector('.part1')
