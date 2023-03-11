@@ -25,6 +25,10 @@
     position: relative;
 }
 
+.play{
+    cursor: pointer;
+}
+
 .player-conatiner svg{
     position: absolute;
     height: 50%;
