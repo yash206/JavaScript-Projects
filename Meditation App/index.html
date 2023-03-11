@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body style="background-color: rgb(202, 202, 202);">
     <div class="app">
         <div class="vid-container">
             <video loop>
@@ -17,7 +17,7 @@
             </video>
         </div>
         <div class="time-select">
-            <button data-time="10">2 Minutes</button>
+            <button data-time="120" title="Click to reset">2 Minutes</button>
             <button data-time="300">5 Minutes</button>
             <button data-time="600">10 Minutes</button>
         </div>
@@ -32,7 +32,8 @@
             <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
             </svg>
-            <h3 class="time-display">0:00</h3>
+            <h3 class="time-display">10:00</h3>
+            <button class="reset">Reset</button>
         </div>
         <div class="sound-picker">
             <button data-sound="sounds/rain.mp3" data-video="video/rain.mp4"><img src="svg/rain.svg" alt="rain"/></button>
